@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Attrbute Value </title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="password" name="" placeholder="Enter Name">
+<button id="s">show pass</button>
+<button id="h">Hide pass</button>
+<h1>Data text</h1>
+<button id="l">left</button>
+<button id="r">right</button>
+<button id="c">Center</button>
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" width="200" height="200">
+<button id="img1">First image</button>
+<button id="img2">secind images</button>
+<script type="text/javascript">
+	$("#img1").click(function(){
+		$("img").attr("src","https://www.nature.com/immersive/d41586-021-00095-y/assets/3TP4N718ac/2021-01-xx_jan-iom_tree-of-life_sh-1080x1440.jpeg");
+	});
+	$("#img2").click(function(){
+		$("img").attr("src","https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+	});
+
+	$(document).ready(function(){
+
+	$("#l").click(function(){
+		$("h1").attr("align","left");
+	});
+
+	$("#c").click(function(){
+		$("h1").attr("align","Center");
+	});
+    
+    $("#r").click(function(){
+    	$("h1").attr("align","right");
+    });
+
+	});
+
+
+
+
+
+
+
+
+
+	$(document).ready(function(){
+		$("#s").click(function(){
+			$("input").attr("type","text");
+			
+		});
+		$("#h").click(function(){
+			$("input").attr("type","password");
+		});
+	});
+</script>
+</body>
+</html>

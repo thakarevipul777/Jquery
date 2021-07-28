@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Attrbute Value </title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="password" name="" placeholder="Enter Name">
+<button id="s">show pass</button>
+<button id="h">Hide pass</button>
+<h1>Data text</h1>
+<button id="l">left</button>
+<button id="r">right</button>
+<button id="c">Center</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	$("#l").click(function(){
+		$("h1").attr("align","left");
+	});
+
+	$("#c").click(function(){
+		$("h1").attr("align","Center");
+	});
+    
+    $("#r").click(function(){
+    	$("h1").attr("align","right");
+    });
+
+	});
+
+
+	$(document).ready(function(){
+		$("#s").click(function(){
+			$("input").attr("type","text");
+			
+		});
+		$("#h").click(function(){
+			$("input").attr("type","password");
+		});
+	});
+</script>
+</body>
+</html>

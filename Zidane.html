@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;margin: 0px;box-sizing: border-box;
+        }
+        #Div1{
+            height :500px;
+            width: 600px;
+            padding: 30px;
+            border: 4px solid black;
+            margin: 50px auto;
+        }
+        #Div2{
+            padding: 30px;
+            border: 4px solid red;
+            height :100%;
+            width: 100%;
+        }
+        #Div3{
+            border: 4px solid black;
+            height :100%;
+            width: 100%;
+        }
+        .sk{
+            text-align: center;
+        }
+        .i2{
+  		animation-name: vk;
+  		animation-duration: 1s;
+  		animation-iteration-count: initial;
+        position: relative;
+  		
+  	}
+  	@keyframes vk{
+  		0%{left: -500px;}         
+  		100%{left:  0px;}
+  	}
+        
+        
+    </style>
+</head>
+<body>
+    <div id="Div1">
+        <div id="Div2">
+            <div id="Div3">
+                <img id="img1" src=" https://c.ndtvimg.com/2020-12/1eadv6eg_lionel-messi-afp_625x300_19_December_20.jpg" alt="" height="100%" width="100%">
+                <!-- <img id="img2" src="https://images.indianexpress.com/2020/09/lionel-messi.jpg"  alt="" height="100%" width="100%"> -->
+            </div>
+
+        </div>
+    
+    </div>
+    <div class="sk">
+        <button id="pa">Click For Animation</button>
+        <button id="pa1">Change Img</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#Div1').mouseover(function(){
+                $(this).css('background-color','red')
+            })
+            $('#Div2').mouseover(function(){
+                $(this).css('background-color','yellow')
+            })
+            $('#Div1').mouseleave(function(){
+                $(this).css('background-color','yellow')
+            })
+            $('#Div2').mouseleave(function(){
+                $(this).css('background-color','red')
+            })
+            $('#pa').click(function(){
+                $('#Div1').css('background-color','pink')
+            })
+            $('#pa').click(function(){
+                $('#Div2').css('background-color','blue')
+            })
+
+            // $('#pa1').click(function(){
+            //     $('#img1').remove()
+            // });
+
+            $('#pa1').click(function(){
+                //  var a= $('<img>')
+                //  var im=a.attr('src','https://images.indianexpress.com/2020/09/lionel-messi.jpg')
+                //   $('#Div3').append(im);
+                $('#img1').attr('src','https://images.indianexpress.com/2020/09/lionel-messi.jpg')
+            })
+
+        //     $("#pa1").click(function(){
+	    //   	$("#img1").attr("src","https://images.indianexpress.com/2020/09/lionel-messi.jpg");
+	    //   });
+
+      
+ 
+        })
+    </script>
+   
+    
+</body>
+</html>

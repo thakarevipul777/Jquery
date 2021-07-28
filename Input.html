@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="HP">
+        <label for="">User</label>
+        <input type="text" id="user" >
+        <label for="">pass</label>
+        <input type="password" id="pass">
+        <label for="">email</label>
+        <input type="email" id="zidane">
+        <select id="kl">
+            <option value="COK">Coc</option>
+            <option value="dfK">Casino</option>
+            <option value="jjj">Itelr</option>
+            <option value="Ikls">Ita</option>
+            <option value="COK">Cards</option>
+        </select>
+        <input type="submit">    
+    </form>
+    <div id="lo" style="height: 300px;border: 2px solid black; padding: 20px; margin: 10px;">
+
+    </div>
+
+
+    <script>
+        $('#user,#pass,#zidane').focus(function(){
+            $(this).css("background-color","orange")
+        })
+        $('#user,#pass,#zidane,#kl').blur(function(){
+            $(this).css("background-color","")
+        })
+        $("#kl").change(function(){
+            $(this).css("background-color","orange")
+        })
+        $('#zidane').change(function(){
+            var el=$(this).val();
+            $('#lo').html(el);
+        })
+        $('#zidane').select(function(){
+            $(this).css("background-color","pink")
+        })
+        $('#HP').submit(function(){
+            alert("Form Submit");
+        })
+        
+
+        
+        
+       
+
+    </script>
+    
+</body>
+</html>

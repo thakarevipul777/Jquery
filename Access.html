@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <ul id="sc">
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+    </ul>
+    <ul id="sec">
+        <li >Home</li>
+        <li >Loads</li>
+        <li>isdjios</li>
+        <li>Tags</li>
+    </ul>
+    <ul id="tar">
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+    </ul>
+    <ul id="tar1">
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+    </ul>
+    <ul id="tar2">
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+        <li >Home</li>
+        <li>Loads</li>
+        <li>Tags</li>
+    </ul>
+    <script>
+        $('#sc li').css("border",'2px solid black');
+
+        $('#sec li:first').css("border",'2px solid black');
+
+        $('#sec li:last').css("border",'2px solid red');
+
+        $('#tar li:eq(4)').css("border",'2px solid orange');
+        
+        $('#tar1 li:gt(1)').css("border",'2px solid orange');
+          
+        $('#tar2 li:lt(4)').css("border",'2px solid orange');
+        
+    </script>
+    
+</body>
+</html>

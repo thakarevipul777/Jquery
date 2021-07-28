@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="swiper-js/swiper-bundle.css">
+  <link rel="stylesheet" href="swiper-js/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  
+.white{
+    color: white;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+      background-color: white;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 380px;
+
+  }
+  .swiper-slide img{
+      width: 100%;
+      height: 300px;
+  }
+  .Caro{
+      padding: 20px;
+      background-color: #4e15ec;
+  }
+  .text-area{
+      text-align: center;
+  }
+  .text-area span{
+      color:orangered;
+  }
+  .head{
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase; 
+         }
+   #goUP{
+    position: fixed;  
+    right:20px;
+    bottom:20px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    z-index: 20;
+         }
+  </style>
+    </head>
+    <body>
+
+   
+     
+       <section class="Caro" id="client">
+        <h1 class="head">Company client area </h1>
+<div class="swiper-container">
+ <div class="swiper-wrapper">
+   <div class="swiper-slide">
+     <div class="img-area">
+         <img src="img/a (1).jpg" alt="">
+     </div>
+     <div class="text-area">
+        
+         <h3> ArjunDeep <br><span>Web Developer</span></h3>
+     </div>
+ </div>
+ 
+ <div class="swiper-slide">
+     <div class="img-area">
+         <img src="img/a (2).jpg" alt="">
+     </div>
+     <div class="text-area">
+         <h3>Jaywant <br><span>Java Developer</span></h3>
+     </div>
+ </div>
+ <div class="swiper-slide">
+   <div class="img-area">
+       <img src="img/a (4).jpg" alt="">
+   </div>
+   <div class="text-area">
+       <h3>Rudhay <br><span>.Net Developer</span></h3>
+   </div>
+</div>
+<div class="swiper-slide">
+ <div class="img-area">
+     <img src="img/a (3).jpg" alt="">
+ </div>
+ <div class="text-area">
+     <h3>Dhanaraj <br><span>PHP Developer</span></h3>
+ </div>
+</div>
+<div class="swiper-slide">
+<div class="img-area">
+   <img src="img/a (5).jpg" alt="">
+</div>
+<div class="text-area">
+   <h3>Shamal <br><span>HR Manager</span></h3>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="img-area">
+   <img src="img/a (6).jpg" alt="">
+</div>
+<div class="text-area">
+   <h3>Amol patil <br><span>Web Developer</span></h3>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="img-area">
+   <img src="img/a (7).jpg" alt="">
+</div>
+<div class="text-area">
+   <h3>Deepak  <br><span>Python Developer</span></h3>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="img-area">
+   <img src="img/a (1).jpeg" alt="">
+</div>
+<div class="text-area">
+   <h3>ArjunDeep <br><span>Web Developer</span></h3>
+</div>
+</div>
+
+    
+ </div>
+ <!-- Add Pagination -->
+ <div class="swiper-pagination"></div>
+</div>
+</section>
+        <a href="#nav"><img src="img/upArro.jpg" alt="" id="goUP"></i></a>
+        <script src="swiper-js/swiper-bundle.js"></script>
+        <script src="swiper-js/swiper-bundle.min.js"></script>
+       
+       <script>
+		var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 27,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+		</script>
+    </body>
+</html>

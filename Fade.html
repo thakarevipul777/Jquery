@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style type="text/css">
+  	div{
+  		background-color: orange;
+  		padding: 100px;
+  	}
+  </style>
+</head>
+<body>
+<div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<button class="abcd">hide / show</button>
+<button id="ll">Click</button>
+<button id="Rm">Show</button>
+
+
+<img src="https://www.playlsi.com/493897/globalassets/1440x720-hero/featured-playgrounds/frankkentsdream-park-1440x720.jpg?width=767" width="400" height="300">
+
+<h2>fadeIn / fadeOut</h2>
+<p>jfhsjfksfjskfjsjfl</p>
+<script type="text/javascript">
+    $("#ll").click(function(){
+		$("div").hide();
+	});
+    $("#Rm").click(function(){
+		$("div").show();
+	});
+
+	$(".abcd").click(function(){
+		$("div").toggle(4000);
+	});
+
+    $("div").click(function(){
+    	$("img").fadeIn(3000);
+    });
+
+    $("p").click(function(){
+    	$("img").fadeOut(3000);
+    });
+
+    $("h2").click(function(){
+    	$("img").fadeToggle(2000);
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1 align="center">Hi Student</h1>
+<img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" width="300" height="300">
+
+<button id="f">remove h1</button>
+<button id="s">remove src</button>
+
+
+<input type="text" name="">
+<button disabled="" id="aa">click me</button>
+
+<script type="text/javascript">
+	$("input").keyup(function(){
+		var a=$(this).val();
+		var l=a.length;
+		console.log(l)
+		if(l>0){
+			$("#aa").removeAttr("disabled");
+		}else{
+			$("#aa").attr("disabled","true");
+		}
+	});
+
+
+	$("#f").click(function(){
+		$("h1").removeAttr("align");
+	});
+
+	$("#s").click(function(){
+		$("img").removeAttr("src");
+	});
+</script>
+</body>
+</html>

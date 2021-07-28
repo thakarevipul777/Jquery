@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="ss" placeholder="Search hear">
+
+        <p>Congress</p>
+        <p>Bjp</p>
+        <p>Css</p>
+        <p>Germany</p>
+        <p>La</p>
+        <p>Rnaldo</p>
+
+    </div>
+    <script>
+
+        $('#ss').on('keyup', function(){
+            var a=$(this).val().toLowerCase();
+            $('p').filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(a)> -1)
+            });
+
+        });
+
+        
+    </script>
+    
+</body>
+</html>

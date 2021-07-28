@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></head>
+      <style>
+          div{
+              height: 100px;
+              width: 200px;
+              background-color: cadetblue;
+              border: 2px solid black;
+              position: relative;
+          }
+      </style>
+<body>
+	<div id="BT">
+    
+    </div>
+    <button id="Zi">Click</button>
+
+    <button id="Ro">Stop</button>
+    
+
+<h1></h1>
+<script type="text/javascript">
+	$("#Zi").click(function(){
+		// $('#BT').animate({
+        //     left:'150px',
+        //     width:'+=200px',
+        //     height:'toggle',
+        // })
+        // Animation Sequence 
+        $('#BT').animate({left:'200px'},4000,function(){
+            console.log('Animation First')
+        });
+        $('#BT').animate({height:'300px'});
+        $('#BT').animate({width:'300px'});      
+	});
+
+
+    $("#Ro").click(function(){
+		// $('#BT').stop(); 
+        //Only for first animation stop
+
+        // $('#BT').stop(true);
+        //all animation stps
+        
+        $('#BT').stop(true,true);
+	});
+</script>
+</body>
+</html>

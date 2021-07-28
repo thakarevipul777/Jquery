@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></head>
+<body>
+	<p>thisi <b>a</b> para<mark>thisiis </mark></p>
+	<input type="text" name=""
+	>
+<h1></h1>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('p').mouseleave(function(){
+		var t=$(this).html();
+	        $("h1").html(t);
+	});
+
+$("input").val("ArjunDeep");
+
+
+$("input").mouseleave(function(){
+	alert(	$(this).val());
+});
+
+});
+</script>
+</body>
+</html>

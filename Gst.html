@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      .A{
+          display: flex;
+          margin: 20px auto;
+      }
+      #Div1,#Div2{
+          height: 400px;
+          width: 400px;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+      }
+
+  </style>
+</head>
+<body>
+    <div class="A">
+        <div id="Div1">
+            <h4 class="text-center">Billing System</h4>
+            <label>User Name </label>
+            <input type="text" id="UN1"> <br>
+            <label>Product Name </label>
+            <select id="Li" >
+                <option >Select From Below</option>
+                <option value="T-Shirt">T-Shirt</option>
+                <option value="Jeans Pant">Jeans Pant</option>
+                <option value="Shirt">Shirt</option>
+                <option value="Pant 3-4th">Pant 3-4th</option>
+                <option value="Levis">Levis</option>
+                <option value="Buffalo">Buffalo</option>
+                <option value="Watch">Watch</option>
+                <option value="Maggi">Maggi</option>
+            </select> <br>
+            <label>Total Bill </label>
+            <input type="number" id="TB1"> <br>
+            <label>Gst Aplicable </label>
+            <input type="number" id="GA"> <br>
+
+
+        </div>
+        <div id="Div2">
+            <h4 class="text-center">Billing Copy For Customer</h4>
+            <h4>User Name : </h4>
+            <h4 id="UN"></h4>
+            <h4>Product Name : </h4>
+            <h4 id="LI"></h4>
+            <h4>Total Bill + Gst :</h4>
+            <h4 id="TB"></h4>
+        </div>
+    </div>
+
+    
+    <button id="l" class="btn btn-danger">Calculate</button>
+    <button id="ll" onclick="print()" class="btn btn-warning">Print</button>
+
+    <script>
+        $(document).ready(function(){         
+               $('#l').click(function(){
+               var a= $('#UN1').val();
+               $('#UN').text(a);
+               var a= $('#Li').val();
+               $('#LI').text(a);
+               var g= parseInt($('#TB1').val());
+               var b= parseInt($('#GA').val());              
+               var c=g*(b/100);              
+               var d=g+c;
+
+               $('#TB').text(d);
+               
+            })
+
+        })
+    </script>
+</body>
+</html>

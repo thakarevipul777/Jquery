@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #Out{
+            background-color: lightsalmon;
+            padding: 30px;
+        }
+        #InnerOut{
+            background-color: lightpink;
+            padding: 30px;
+        }
+        #Insider{
+            background-color: lightskyblue;
+            padding: 30px;
+            height: 300px;
+        }
+        #A,#B,#C,#D{
+            height: 200px;
+            width: 100px;
+            float: left;   
+            margin: 50px;                   
+                     
+        }
+        #A,#C,#B,#D{
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id='Out'>
+        <h4>GGP</h4>
+        <div id='InnerOut' style="position: relative;">
+            <h4>Grandparent</h4>
+            <div id='Insider'>
+                <b>Parent</b>
+                <div id="A">Pant</div>
+                <div id="B">gale</div>
+                <div id="C">Samuel</div>
+                <div id="D">Badre</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // $('#C').parent().css('background-color','red');
+            // $('#C').parents().css('background-color','red');
+            // $('#InnerOut').parent().css('background-color','red');
+            // $('#C').parents('#InnerOut').css('background-color','red');
+           //  $('#C').parentsUntil('#Out').css('background-color','red'); 
+            //  $('#C').offsetParent().css('background-color','red');  
+            // $('#C').closest('div').css('background-color','red');  
+
+            // $('#InnerOut').children().css('background-color','red');
+            // $('#InnerOut').children('#Insider').css('background-color','red');
+            // $('#Insider').find('#C').css('background-color','red');
+
+
+
+            // $('#C').siblings().css('background-color','red');
+            // $('#C').siblings('#B').css('background-color','red');
+            //  $('#B').next().css('background-color','red');
+            // $('#C').prev().css('background-color','red');
+            // $('#B').nextAll().css('background-color','red');
+            // $('#C').prevAll().css('background-color','red');
+            
+            // $('#B').nextUntil('#D').css('background-color','red');
+            // $('#B').nextUntil('#D').css('background-color','red');
+            $('#D').prevUntil('#B').css('background-color','red');
+            
+            
+            
+            
+            
+           
+
+            
+            
+
+
+        })
+    </script>
+    
+</body>
+</html>
